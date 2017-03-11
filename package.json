@@ -1,0 +1,30 @@
+{
+  "name": "toneelstuk-ui",
+  "version": "0.1.0",
+  "description": "Ui made in bootstrap and jquery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GO345724/toneelstuk-ui.git"
+  },
+  "author": "Ajasra Das",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GO345724/toneelstuk-ui/issues"
+  },
+  "homepage": "https://github.com/GO345724/toneelstuk-ui#readme",
+  "devDependencies": {
+      "browser-sync": "^2.18.8",
+      "del": "^2.2.2",
+      "gulp": "^3.9.1",
+      "gulp-changed": "^2.0.0",
+      "gulp-concat": "^2.6.1",
+      "gulp-rename": "^1.2.2",
+      "gulp-sass": "^3.1.0",
+      "gulp-sourcemaps": "^2.4.1",
+      "gulp-uglify": "^2.1.0"
+  }
+}

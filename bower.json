@@ -1,0 +1,21 @@
+{
+  "name": "toneelstuk-ui",
+  "description": "Ui made in bootstrap and jquery",
+  "main": "index.js",
+  "authors": [
+    "Ajasra Das"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/GO345724/toneelstuk-ui",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
+}
