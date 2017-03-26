@@ -45,5 +45,5 @@ template_angulr/
 
 # Assets and Libraries #
 ######################
-app/css/assets
-app/scripts/libs.js
+app/css/
+app/js/
