@@ -22,7 +22,8 @@ var inputs = {
     ],
     'libCss' : [
         'bower_components/bootstrap/dist/css/bootstrap.css',
-        'bower_components/bootstrap/dist/css/bootstrap-theme.css'
+        'https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css'
+        // 'bower_components/bootstrap/dist/css/bootstrap-theme.css'
     ],
     'scss' : [
         'app/scss/app.scss'

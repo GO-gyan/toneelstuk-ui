@@ -16,7 +16,8 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "jquery": "1.12.4"
+    "jquery": "1.12.4",
+    "simple-line-icons": "^2.4.1"
   },
   "resolutions": {
     "jquery": "1.12.4"
