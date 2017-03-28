@@ -1,0 +1,89 @@
+/*Mixins*/
+
+@mixin font($font, $weight) {
+    font-family: $font;
+    font-weight: $weight;
+}
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+}
+
+@mixin transition($time) {
+    transition: All $time ease-in-out;
+    -webkit-transition: All $time ease-in-out;
+    -moz-transition: All $time ease-in-out;
+    -ms-transition: All $time ease-in-out;
+    -o-transition: All $time ease-in-out;
+}
+
+@mixin add-border($size, $color, $position) {
+    @if $position == 'top' {
+        border-top: $size solid $color;
+    }
+    @else if $position == 'right' {
+        border-right: $size solid $color;
+    }
+    @else if $position == 'bottom' {
+        border-bottom: $size solid $color;
+    }
+    @else if $position == 'left' {
+        border-left: $size solid $color;
+    }
+    @else if $position == 'top-bottom' {
+        border-top: $size solid $color;
+        border-bottom: $size solid $color;
+    }
+    @else if $position == 'right-left' {
+        border-right: $size solid $color;
+        border-left: $size solid $color;
+    }
+    @else if $position == 'all' {
+        border: $size solid $color;
+    }
+}
+
+@mixin box-shadow($size, $color) {
+    box-shadow: $size $color;
+    -webkit-box-shadow: $size $color;
+    -moz-box-shadow: $size $color;
+    -ms-box-shadow: $size $color;
+    -o-box-shadow: $size $color;
+}
+@mixin text-shadow($size, $color) {
+    text-shadow: $size $color;
+    -webkit-text-shadow: $size $color;
+    -moz-text-shadow: $size $color;
+    -ms-text-shadow: $size $color;
+    -o-text-shadow: $size $color;
+}
+
+@mixin transform-translateY($val) {
+    transform: translateY($val);
+    -webkit-transform: translateY($val);
+    -moz-transform: translateY($val);
+    -ms-transform: translateY($val);
+    -o-transform: translateY($val);
+}
+
+@mixin transform-scale($foo, $bar) {
+    transform: scale($foo, $bar);
+    -webkit-transform: scale($foo, $bar);
+    -moz-transform: scale($foo, $bar);
+    -ms-transform: scale($foo, $bar);
+    -o-transform: scale($foo, $bar);
+}
+
+@mixin transform-origin($position) {
+    transform-origin: $position;
+    -webkit-transform-origin: $position;
+}
+
+@mixin animation-fill-mode($direction) {
+    animation-fill-mode: $direction;
+    -webkit-animation-fill-mode: $direction;
+}
