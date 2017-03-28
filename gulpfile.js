@@ -36,7 +36,7 @@ gulp.task('concatLibsCss', function() {
         .pipe(gulp.dest('app/css'));
 });
 // compile sass
-gulp.task('compileSass', ['concatLibsCss'], function() {
+gulp.task('compileSass', function() {
     return gulp.src(inputs.scss)
         .pipe(maps.init())
         .pipe(sass())
@@ -54,9 +54,9 @@ gulp.task('concatLibs', function() {
 });
 // watch files
 gulp.task('watchFiles', function() {
-    gulp.watch(['app/css/libs.css'], ['concatLibsCss']);
+    // gulp.watch(['app/css/libs.css'], ['concatLibsCss']);
     gulp.watch(['app/scss/**/*.scss'], ['compileSass']);
-    gulp.watch(['app/js/libs.js'], ['concatLibs']);
+    // gulp.watch(['app/js/libs.js'], ['concatLibs']);
     gulp.watch(['app/js/app.js'], ['concatJs']);
 });
 // serve the files
@@ -68,7 +68,7 @@ gulp.task('serve', function() {
     gulp.watch(['app/scss/**/*.scss'], ['compileSass']);
     gulp.watch(['app/js/libs.js'], ['concatLibs']).on('change', browserSync.reload);
     gulp.watch(['app/js/app.js']).on('change', browserSync.reload);
-    gulp.watch('app/*.html').on('change', browserSync.reload);
+    gulp.watch('app/**/*.html').on('change', browserSync.reload);
 });
 
 // default task for dev
