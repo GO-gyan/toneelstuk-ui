@@ -1,0 +1,32 @@
+/*
+* navbar styles
+*/
+header {
+    nav {
+        &.navbar {
+            background: $primary-color;
+            border: none;
+            border-radius: 0;
+            .navbar-header {
+                .navbar-brand {
+                    color: $primary-color-text;
+                    font-weight: 100;
+                }
+            }
+            .navbar-collapse {
+                .nav.navbar-nav {
+                    li {
+                        a {
+                            font-size: $xsm-font;
+                            font-weight: 100;
+                            color: $primary-color-text;
+                            &:hover {
+                                color: $primary-text-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

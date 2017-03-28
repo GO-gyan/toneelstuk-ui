@@ -4,3 +4,20 @@ Author: Ajasra Das
 Ver: 0.1.0
 Desc: Scss files for compiling
 */
+/* BASE - base styles, variables, mixins etc */
+@import 'base/variables.scss';
+@import 'base/mixins.scss';
+@import 'base/base.scss';
+
+/* MODULES - component modules */
+// @import 'modules/typography.scss';
+// @import 'modules/buttons.scss';
+@import 'modules/nav.scss';
+// @import 'modules/sidebar.scss';
+// @import 'modules/section.scss';
+// @import 'modules/list_items.scss';
+//
+// /* LAYOUTS - layout overrides */
+// @import 'layouts/footer.scss';
+// @import 'layouts/mobile.scss';
+// @import 'layouts/tablet.scss';
